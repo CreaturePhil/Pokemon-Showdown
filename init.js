@@ -1,4 +1,6 @@
 module.exports = function() {
+    process.chdir(__dirname);
+
     function runNpm(command) {
         command = 'npm ' + command + ' && ' + process.execPath + ' app.js';
         console.log('Running `' + command + '`...');
@@ -365,4 +367,4 @@ module.exports = function() {
      *********************************************************/
 
     require('./repl.js').start('app', function (cmd) { return eval(cmd); });
-};
+    };
