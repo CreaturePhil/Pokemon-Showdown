@@ -1,6 +1,6 @@
 var PokemonShowdown = module.exports = {};
 
-PokemonShowdown.startServer = function() {
+PokemonShowdown.startServer = function(config) {
     process.chdir(__dirname);
 
     function runNpm(command) {
