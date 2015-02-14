@@ -369,4 +369,4 @@ PokemonShowdown.startServer = function(config) {
      *********************************************************/
 
     require('./repl.js').start('app', function (cmd) { return eval(cmd); });
-    };
+};
